@@ -96,7 +96,7 @@ for link in all_links:
     quote_box = browser.find_element(By.XPATH, "/html/body/div/div[2]/div[1]") #finding quote box element
     quote_elements = quote_box.find_elements(By.CLASS_NAME, "quote") #finding quote elements in the quote box add
     quotes_of_page = parse_from_quote_elements(quote_elements)
-    all_quotes = (all_quotes + quotes_of_page)
+    all_quotes.extend(quotes_of_page)
 
 for quote in all_quotes:
     print(quote)
