@@ -32,7 +32,7 @@ for book_link in all_book_links:
     title = browser.find_element(By.XPATH, "/html/body/div/div/div[2]/div[2]/article/div[1]/div[2]/h1").text
     price = browser.find_element(By.XPATH, "/html/body/div/div/div[2]/div[2]/article/table/tbody/tr[3]").text
     availability = browser.find_element(By.XPATH, "/html/body/div/div/div[2]/div[2]/article/table/tbody/tr[6]/td").text
-    upc = browser.find_element(By.XPATH, "/html/body/div/div/div[2]/div[2]/article/table/tbody/tr[6]/td")
+    upc = browser.find_element(By.XPATH, "/html/body/div/div/div[2]/div[2]/article/table/tbody/tr[1]/td").text
     
     product_dict = {
         "title": title,
